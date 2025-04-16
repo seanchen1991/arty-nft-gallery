@@ -1,5 +1,11 @@
 import FetchNfts from "./FetchNfts";
+import MintNft from "./MintNft";
 
 export default function LoggedIn() {
-  return <FetchNfts />;
+  return (
+    <div>
+      <MintNft />
+      <FetchNfts />
+    </div>
+  );
 }
