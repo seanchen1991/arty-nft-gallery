@@ -5,7 +5,7 @@ import { sepolia } from "viem/chains";
 import styles from "../styles/Home.module.css";
 import Card from "./Card";
 
-const FETCH_ENDPOINT = process.env.ENDPOINT;
+const FETCH_ENDPOINT = process.env.FETCH_ENDPOINT;
 
 export default function FetchNfts() {
   const [nfts, setNfts] = useState([]);
