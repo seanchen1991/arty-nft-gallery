@@ -90,7 +90,7 @@ export default function MintNft() {
   ) : (    
     <div className={styles.rowChecker}>
       <span className={styles.textError}>
-        You don't have enough ETH to mint an NFT!
+        You do not have enough ETH to mint an NFT!
       </span>
     </div>
   );
