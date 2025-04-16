@@ -4,7 +4,7 @@ A demo application that allows users to connect their wallets and fetches all in
 
 The app is hosted on Vercel. Visit it by pointing your browser to [https://nft-display-umber.vercel.app/]().
 
-![Arty NFT Gallery]()
+![Arty NFT Gallery](public/arty-nft-gallery.png)
 
 ## Structure
 
