@@ -5,6 +5,8 @@ import { sepolia } from "viem/chains";
 import styles from "../styles/Home.module.css";
 import Card from "./Card";
 
+const FETCH_ENDPOINT = process.env.ENDPOINT;
+
 export default function FetchNfts() {
   const [nfts, setNfts] = useState([]);
   const { address } = useAccount();
@@ -13,7 +15,7 @@ export default function FetchNfts() {
   useEffect(() => {
     async function fetchData() {
       await axios
-        .get(`http://localhost:5001/fetchnfts`, {
+        .get(FETCH_ENDPOINT, {
           params: { address, chain },
         })
         .then((resp) => {
