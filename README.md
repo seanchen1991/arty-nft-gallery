@@ -1,6 +1,6 @@
-## The Arty NFT Gallery
+art## The Arty NFT Gallery
 
-A demo application that allows users to connect their wallets and fetches all instances of the user's ArtyNFTs on the Sepolia testnet. 
+A demo application that allows users to connect their wallets, mint instances of the ArtyNFT, display those NFTs, and transfer them to another wallet.
 
 The app is hosted on Vercel. Visit it by pointing your browser to [https://nft-display-umber.vercel.app/]().
 
