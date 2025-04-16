@@ -12,6 +12,8 @@ export default function FetchNfts() {
   const { address } = useAccount();
   const chain = sepolia.id;
 
+  console.log("Fetching NFTs...");
+
   useEffect(() => {
     async function fetchData() {
       await axios
@@ -20,7 +22,7 @@ export default function FetchNfts() {
         })
         .then((resp) => {
           setNfts(resp.data.result);
-          console.log(resp);
+          console.log(`Got NFTs! ${resp}`);
         });
     }
 
