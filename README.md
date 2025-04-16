@@ -1,4 +1,4 @@
-art## The Arty NFT Gallery
+## The Arty NFT Gallery
 
 A demo application that allows users to connect their wallets, mint instances of the ArtyNFT, display those NFTs, and transfer them to another wallet.
 
