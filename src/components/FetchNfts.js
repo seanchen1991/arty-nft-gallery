@@ -5,7 +5,7 @@ import { sepolia } from "viem/chains";
 import styles from "../styles/Home.module.css";
 import Card from "./Card";
 
-const FETCH_ENDPOINT = process.env.FETCH_ENDPOINT;
+const GET_URL = "https://nft-server-ojnx.onrender.com/fetchnfts";
 
 export default function FetchNfts() {
   const [nfts, setNfts] = useState([]);
@@ -17,7 +17,7 @@ export default function FetchNfts() {
   useEffect(() => {
     async function fetchData() {
       await axios
-        .get(FETCH_ENDPOINT, {
+        .get(GET_URL, {
           params: { address, chain },
         })
         .then((resp) => {
