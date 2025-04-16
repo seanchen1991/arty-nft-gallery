@@ -29,3 +29,8 @@ components
 ├── TransferNft.js
 └── WalletProvider.js
 ```
+## Running Locally
+
+If you want to try running the code locally, you'll need Node.js, npm, and pnpm installed locally on your machine.
+Clone this repository, run `npm install --save-dev` to install dependencies, then start the development server with `pnpm dev`.
+The app will served at `localhost:3000`.
