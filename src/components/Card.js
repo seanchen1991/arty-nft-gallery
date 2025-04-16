@@ -6,6 +6,7 @@ import {
   useWaitForTransactionReceipt
 } from "wagmi";
 import styles from "../styles/Home.module.css";
+import buttonStyles from "../styles/Page.module.css";
 import NFT_ABI from "../wagmi/abi/ArtyNFT";
 
 export default function Card(props) {
@@ -34,27 +35,31 @@ export default function Card(props) {
   };
 
   return (
-    <section className={styles.cardContainer}>
-      {metadata?.name ? <h1>{metadata.name}-{tokenId}</h1> : <h1>No NFT title can be shown.</h1>}
-      {metadata?.image ? <img src={metadata.image} /> : <p>No NFT image can be shown.</p>}
-      {metadata ? (
-        <div>
-          <button
-            disabled={isPending}
-            onClick={handleClick}
-          >
-            {isPending ? "Transferring..." : "Transfer"}
-          </button>
-          {hash && <div>Transaction Hash: {hash}</div>}
-          {isConfirming && <div>Waiting for confirmation...</div>}
-          {isConfirmed && <div>Transaction confirmed.</div>}
-          {error && (
-            <div>Error: {error.shortMessage || error.message}</div>
-          )}
-        </div>
-        ) : (
-        <div />
-      )}
-    </section>
+    <div>
+      <section className={styles.cardContainer}>
+        {metadata?.name ? <h1>{metadata.name}-{tokenId}</h1> : <h1>No NFT title can be shown.</h1>}
+        {metadata?.image ? <img src={metadata.image} /> : <p>No NFT image can be shown.</p>}
+        {metadata ? (
+          <div>
+            <br />
+            <button
+              className={buttonStyles.buttonAction}
+              disabled={isPending}
+              onClick={handleClick}
+            >
+              {isPending ? "Transferring..." : "Transfer"}
+            </button>
+            {hash && <div>Transaction Hash: {hash}</div>}
+            {isConfirming && <div>Waiting for confirmation...</div>}
+            {isConfirmed && <div>Transaction confirmed.</div>}
+            {error && (
+              <div>Error: {error.shortMessage || error.message}</div>
+            )}
+          </div>
+          ) : (
+          <div />
+        )}
+      </section>
+    </div>
   );
 }
