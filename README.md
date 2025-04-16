@@ -15,17 +15,17 @@ ArtyNFTs are fetched from a bespoke webserver that is hosted at [https://render.
 The high-level layout and component structure of the code is specified in the `app` directory. 
 ```
 app
-|_page.js
-|_layout.js
+├── page.js
+└── layout.js
 ```
 The majority of the logic are implemented as React components, which are all located in the `components` directory.
 ```
 components
-|_Card.js
-|_Header.js
-|_LoggedIn.js
-|_LoggedOut.js
-|_FetchNfts.js
-|_TransferNft.js
-|_WalletProvider.js
+├── Card.js
+├── Header.js
+├── LoggedIn.js
+├── LoggedOut.js
+└── FetchNfts.js
+├── TransferNft.js
+└── WalletProvider.js
 ```
