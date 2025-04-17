@@ -2,7 +2,7 @@
 
 A demo application that allows users to connect their wallets, mint instances of the ArtyNFT, display those NFTs, and transfer them to another wallet.
 
-The app is hosted on Vercel. Visit it by pointing your browser to [https://nft-display-umber.vercel.app/]().
+The app is hosted on Vercel. Visit it by pointing your browser to [https://nft-display-umber.vercel.app/](https://nft-display-umber.vercel.app/).
 
 ![Arty NFT Gallery](public/arty-nft-gallery.png)
 
@@ -10,7 +10,7 @@ The app is hosted on Vercel. Visit it by pointing your browser to [https://nft-d
 
 This application is a Next.js app. It utilizes RainbowKit to implement wallet connection functionality and Wagmi to implement the NFT transaction logic.
 
-ArtyNFTs are fetched from a bespoke webserver that is hosted at [https://render.com](). You can find the webserver code at [https://github.com/seanchen1991/nft-server](https://github.com/seanchen1991/nft-server).
+ArtyNFTs are fetched from a bespoke webserver that is hosted at [https://render.com](https://render.com). You can find the webserver code at [https://github.com/seanchen1991/nft-server](https://github.com/seanchen1991/nft-server).
 
 The high-level layout and component structure of the code is specified in the `app` directory. 
 ```
