@@ -26,6 +26,7 @@ components
 ├── LoggedIn.js
 ├── LoggedOut.js
 └── FetchNfts.js
+└── MintNft.js
 ├── TransferNft.js
 └── WalletProvider.js
 ```
